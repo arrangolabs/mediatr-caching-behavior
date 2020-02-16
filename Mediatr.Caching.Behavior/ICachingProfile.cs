@@ -5,7 +5,7 @@ using MediatR;
 
 namespace Mediatr.Caching.Behavior
 {
-    public interface ICacheableRequest<in TRequest, TResponse> where TRequest : IRequest<TResponse>
+    public interface ICachingProfile<in TRequest, TResponse>
     {
         string GetCacheKey(TRequest request);
         DateTime GetExpirationDate(TRequest request);

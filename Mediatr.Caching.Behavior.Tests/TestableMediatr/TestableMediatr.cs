@@ -19,7 +19,7 @@ namespace Mediatr.Caching.Behavior.Tests.TestableMediatr
             public string Id { get; set; }
         }
 
-        public class CacheableRequest : ICacheableRequest<Request,Response>
+        public class CacheableRequest : ICachingProfile<Request,Response>
         {
             public string GetCacheKey(Request request)
             {
