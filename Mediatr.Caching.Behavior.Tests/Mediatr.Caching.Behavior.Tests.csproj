@@ -13,7 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\mediatr.caching.behavior\Mediatr.Caching.Behavior.csproj" />
+    <ProjectReference Include="..\Mediatr.Caching.Behavior\Mediatr.Caching.Behavior.csproj" />
+
   </ItemGroup>
 
 </Project>
