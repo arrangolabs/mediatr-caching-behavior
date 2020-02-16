@@ -1,7 +1,15 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Randy Barca</Authors>
+    <Company />
+    <Product />
+    <Description>Simple MediatR pipeline behavior for caching with any client implemented caching provider.</Description>
+    <PackageProjectUrl>https://github.com/randybarca/mediatr-caching-behavior</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/randybarca/mediatr-caching-behavior</RepositoryUrl>
+    <PackageTags>Mediatr, Pipelines, Behavior, Caching</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
