@@ -1,11 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using MediatR;
 
-namespace Mediatr.Caching.Behavior.Tests.TestableMediatr
+namespace Mediatr.Caching.Behavior.Tests.Helpers
 {
     public class TestableMediatr
     {
@@ -19,7 +17,7 @@ namespace Mediatr.Caching.Behavior.Tests.TestableMediatr
             public string Id { get; set; }
         }
 
-        public class CacheableRequest : ICachingProfile<Request,Response>
+        public class CacheableProfile: ICachingProfile<Request,Response>
         {
             public string GetCacheKey(Request request)
             {
